@@ -1,6 +1,6 @@
 # PCPerformanceBoost Reload
 
-PCPerformanceBoost is a script designed to optimize the performance of your computer by performing various maintenance tasks such as cleaning cache, temporary files, crash dumps, and optimizing memory. The script also checks for updates to ensure you have the latest features and fixes.
+PCPerformanceBoost Reload is a script designed to optimize the performance of your computer by performing various maintenance tasks such as cleaning cache, temporary files, crash dumps, and optimizing memory. The script also checks for updates to ensure you have the latest features and fixes.
 
 ## Features
 - Memory Optimization
@@ -14,10 +14,11 @@ PCPerformanceBoost is a script designed to optimize the performance of your comp
 - Python 3.x
 - `requests` library
 - `colorama` library
+- `packaging` library
 
 You can install the required libraries using pip:
 ```bash
-pip install requests colorama
+pip install requests colorama packaging
 ```
 
 ## Usage

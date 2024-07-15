@@ -5,11 +5,12 @@ import requests
 import ctypes
 import gc
 from colorama import init, Fore, Style
+from packaging import version
 
 init(autoreset=True)
 
-VERSION = "1.0.0.6"
-UPDATE_URL = "https://raw.githubusercontent.com/Jesewe/PCPerfomanceBoost-Reload/main/latest_version.txt"
+VERSION = "v1.0.0.7"
+GITHUB_REPO_URL = "https://api.github.com/repos/Jesewe/PCPerfomanceBoost-Reload/tags"
 
 def main():
     set_console_title("PCPerformanceBoost | Reload")
@@ -27,13 +28,13 @@ def welcome_message():
 
 def check_for_updates():
     try:
-        response = requests.get(UPDATE_URL)
+        response = requests.get(GITHUB_REPO_URL)
         response.raise_for_status()
-        latest_version = response.text.strip()
-        if latest_version != VERSION:
-            print(Fore.LIGHTYELLOW_EX + f"[*] New version available: v{latest_version}. Please update for the latest fixes and features.\n")
+        latest_version = response.json()[0]["name"]
+        if version.parse(latest_version) > version.parse(VERSION):
+            print(Fore.LIGHTYELLOW_EX + f"[*] New version available: {latest_version}. Please update for the latest fixes and features.\n")
         else:
-            print(Fore.GREEN + "[*] You have the latest version installed.\n")
+            print(Fore.GREEN + "[*] You are using the latest version.\n")
     except requests.RequestException as ex:
         print(Fore.RED + f"[!] Error checking for updates: {ex}")
 
