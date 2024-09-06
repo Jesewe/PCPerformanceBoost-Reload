@@ -1,37 +1,55 @@
-# PCPerformanceBoost Reload
+<div align="center">
+   <img src="src/img/icon.png" alt="PCPerformanceBoost" width="200" height="200">
+   <h1>⚡ PCPerformanceBoost | Reload ⚡</h1>
+   <p>Optimize your PC's performance with ease</p>
+   <a href="#features"><strong>Features</strong></a> •
+   <a href="#installation"><strong>Installation</strong></a> •
+   <a href="#usage"><strong>Usage</strong></a> •
+   <a href="#troubleshooting"><strong>Troubleshooting</strong></a> •
+   <a href="#contributing"><strong>Contributing</strong></a>
+</div>
 
-PCPerformanceBoost Reload is a script designed to optimize the performance of your computer by performing various maintenance tasks such as cleaning cache, temporary files, crash dumps, and optimizing memory. The script also checks for updates to ensure you have the latest features and fixes.
+---
+
+# Overview
+**PCPerformanceBoost | Reload** is a tool designed to help users optimize their Windows PC by cleaning temporary files, memory, DNS cache, and other system clutter, ensuring better performance.
 
 ## Features
-- Memory Optimization
-- Cache Cleanup
-- Temporary Files Cleanup
-- Crash Dumps Cleanup
-- DNS Cache Clearing
-- Update Check
+- **Memory Optimization**: Frees up system memory to ensure smooth operation.
+- **Cache Cleanup**: Automates cache cleaning using Windows Disk Cleanup.
+- **Temporary Files Removal**: Cleans up system temporary files.
+- **CrashDumps Folder Cleanup**: Removes crash dump files to save disk space.
+- **DNS Cache Flush**: Clears DNS cache to ensure quicker and smoother network connections.
+- **Update Checker**: Automatically checks for the latest version of the tool on GitHub.
 
-## Requirements
-- Python 3.x
-- `requests` library
-- `colorama` library
-- `packaging` library
+## Installation
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/Jesewe/PCPerformanceBoost-Reload.git
+   cd PCPerformanceBoost-Reload
+   ```
 
-You can install the required libraries using pip:
-```bash
-pip install requests colorama packaging
-```
+2. **Install Dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Run the Script:**
+   ```bash
+   python main.py
+   ```
 
 ## Usage
-1. Clone the repository or download the script.
-2. Ensure you have the required libraries installed.
-3. Run the script using Python.
+- Run the script to start optimizing your system.
+- Follow the prompts to clean your system’s cache, temporary files, crash dumps, and more.
 
-```bash
-python main.py
-```
+## Troubleshooting
+- **Error Checking for Updates**: Make sure you have an active internet connection.
+- **Permission Denied**: Run the script with administrator privileges to perform optimizations.
+- **Cleanup Process Fails**: Ensure you have the necessary system permissions to delete files and folders.
 
 ## Contributing
-Contributions are welcome. Please fork the repository and submit a pull request with your changes.
+Contributions are welcome! Feel free to open an issue or submit a pull request on the [GitHub repository](https://github.com/Jesewe/PCPerformanceBoost-Reload).
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
